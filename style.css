@@ -54,3 +54,7 @@ body{
  .nav-link a:hover{
  	color:black;
  }
+center{
+			background-color: orange;
+			color:white;
+		}

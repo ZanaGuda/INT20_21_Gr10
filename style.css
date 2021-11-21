@@ -262,4 +262,33 @@ table td{
 	
 }
 
+.photo{
+	margin: auto;
+	background:#f2f2f2;
+	overflow: auto;
+	padding: 55px;
+
+}
+.gallery{
+	margin: 5px;
+	border:2px solid black;
+	float:left;
+	width: 400px;
+
+}
+.gallery img{
+	width: 396px;
+	height: 240px;
+	align-items: center;
+
+}
+.description{
+	padding:10px; 
+	font-size:17px;
+	font-family: Roboto;
+	text-align: center;
+	font-weight:bold;
+
+}
+
 

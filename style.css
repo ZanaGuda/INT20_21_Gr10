@@ -274,5 +274,40 @@ table td{
 	font-weight:bold;
 
 }
+#food{
+	font-size: 40px;
+	text-align: center;
+	font-family: roboto;
+	color: #8a8a8a;
+	align-items: center;
+	margin: 370px;
+	background-size: cover;
+}
+.container2{
+	top: 300%;
+	max-width: 1304px;
+	margin: auto;
+	background: #e3dac9;
+	overflow: auto;
+
+}
+
+.gallery2{
+	margin: 13px;
+	/*border: 1px solid #e5d4bd;*/
+	float: left;
+	width: 390px;
+
+}
+.gallery2 img{
+	width: 100%;
+	height: auto;
+
+}
+.description2{
+	padding: 10px;
+	text-align: center;
+	color:#696969;
+}
 
 

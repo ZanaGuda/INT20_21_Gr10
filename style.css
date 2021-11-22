@@ -181,23 +181,7 @@ center{
 	padding:10px;
 	font-size: 18px;	 
 }
-@media(max-width: 991px)
-{
-	.contact{
-		padding: 50px;
-	}
-	.containerr{
-		flex-direction: column;
-	}
-	.containerr .contactInfo{
-		margin-bottom: 40px;
-	}
-	.containerr .contactInfo,
-	.contactForm
-	{
-		width: 100%;
-   	}
-}
+
 
 .footer-distributed{
 	background: #444;

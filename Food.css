@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    /*box-sizing: border-box;*/
+}
+
+ .main{
+ 	width: 100%
+ 	height: 1920px;
+ 	position: relative;
+ 	overflow: hidden;
+
+ }
+
+ nav{
+ 	width: 100%;
+ 	position: sticky;
+ 	margin: -22px auto;
+ 	z-index: 1;
+ 	display: flex;
+ 	text-align:right 80 px;
+ 	/*bottom: 100px;*/
+
+
+ }
+ .logo{
+ 	flex-basis: 20%;
+ 	bottom: 150%;
+
+ }
+ .logo img{
+ 	width: 150px;
+ 	padding: 10px;
+
+ }
+
+ .nav-links{
+ 	height: 10px;
+ 	padding: 35px;
+ 	flex:1;
+ 	text-align: right;
+ 	flex: right;
+ }
+
+ .nav-links ul li{
+ 	list-style: none;
+ 	display: inline-block;
+ 	margin: 0 10px;
+ 	position: relative;
+
+ }
+.nav-links a{
+ 	color: #8a8a8a;
+ 	text-decoration: none;
+ 	transition: color 0.5s;
+ }
+ .nav-link:hover{
+ 	border-bottom: 1px solid black;
+ }
+ .nav-link a:hover{
+ 	color:black;
+ }
+ #food{
+	font-size: 50px;
+	text-align: center;
+	font-family: roboto;
+	color: #8a8a8a;
+	align-items: center;
+	margin: 370px;
+	background-size: cover;
+}
+.container2{
+	top: 300%;
+	max-width: 1304px;
+	margin: auto;
+	background: #e3dac9;
+	overflow: auto;
+
+}
+
+.gallery2{
+	margin: 13px;
+	/*border: 1px solid #e5d4bd;*/
+	float: left;
+	width: 390px;
+
+}
+.gallery2 img{
+	width: 100%;
+	height: auto;
+
+}
+.description2{
+	padding: 10px;
+	text-align: center;
+	color:#696969;
+}
+.desp{
+	padding: 70px;
+}
+
+.photo{
+	margin: auto;
+	background:#f2f2f2;
+	overflow: auto;
+	padding: 55px;
+
+}
+.gallery{
+	margin: 5px;
+	border:2px solid black;
+	float:left;
+	width: 400px;
+
+}
+.gallery img{
+	width: 396px;
+	height: 240px;
+	align-items: center;
+
+}
+.description{
+	padding:10px; 
+	font-size:17px;
+	font-family: Roboto;
+	text-align: center;
+	font-weight:bold;
+
+}

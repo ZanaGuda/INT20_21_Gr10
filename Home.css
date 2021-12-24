@@ -137,3 +137,9 @@ table td{
     font-size: 25px;
     font-family: Roboto;
 }
+.columns {
+  column-count: 3;
+  column-gap: 30px;
+  margin: 20px;
+  color: #e3dac9;
+}

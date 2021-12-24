@@ -128,3 +128,6 @@ body{
 	font-weight:bold;
 
 }
+#dink{
+	background: -webkit-linear-gradient(top,#e3dac9, #989898,#e3dac9 );
+}

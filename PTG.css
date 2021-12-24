@@ -207,3 +207,12 @@ main{
 .table{
   margin-left: 380px;
 }
+#tna{
+    height: 50px;
+  width: 1262px;
+  background-color: #000;
+  background: -webkit-radial-gradient(circle ,#e3dac9,#d4b791 );
+  border-radius: 20px;
+  text-align: center;
+
+}

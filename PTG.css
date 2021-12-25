@@ -216,3 +216,6 @@ main{
   text-align: center;
 
 }
+.rotated{
+  transform: rotate(180deg); 
+}

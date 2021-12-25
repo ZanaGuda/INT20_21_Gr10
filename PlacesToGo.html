@@ -5,13 +5,40 @@
     <link rel="stylesheet" href="PTG.css">
 
     <title>Explore Kosovo</title>
+
+    <style>
+        #div1, #div2 {
+        float: left;
+        width: 151px;
+        height: 151px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+
+}
+    </style>
+    <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
 </head>
 
 <body>  
     <div class="main">
         <nav>
         <div class="logo">
-            <img src="logo.png" width="240" height="140">
+            <img src="Photos/logo.png" width="240" height="140">
         </div>
 
             <div class="nav-links">
@@ -29,6 +56,17 @@
 </div>
 
 <h2 style="text-align: center; font-family: verdana; color: #8a8a8a; margin: -30px auto; text-transform: uppercase; ">Popular places to visit</h2><br>
+
+
+<p style="margin: 10px;">Drag the photo and drop it! </p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="Photos/Kosovo.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="150">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<br><br><br><br><br><br><br><br><br><br>
 <h3 style= " text-align: center; font-family: verdana; color: #8a8a8a; background-color:#e3dac9;"><i>Kosovo is not a country that you automatically think of when trying to come up with another Balkan bucket list location. The thing is, though, if you avoid this beautiful country, you’re missing out!</i></h3>
 <div class="photo">
 
@@ -140,7 +178,7 @@
 <div class="box">
 <img src="Photos/ShpellaEGadimes.jpg"><p>Shpella e Gadimes, Lipjan</p></div>
 <div class="box">
-<img src="Photos/Ulpiana.jpg"><p>Ulpiana, Lipjan</p></div>
+<img src="Photos/Ulpiana.jpg" ><p>Ulpiana, Lipjan</p></div>
 
 </main>
 
@@ -150,6 +188,13 @@
 
 <a href="Hotels.pdf" style="margin: 100px; color:#8a8a8a; text-shadow: 0.5px 0.5px; ">Best hotels to stay in Kosovo</a>
 <br>
+<h4 style="margin: 10px;">The price of staying in a hotel for a few days!</h4>
+
+<form oninput="x.value=parseInt(a.value)*parseInt(b.value)"> <!-- parseInt e kthen se pari argumentin ne string,e analizon ate pastaj e kthen ne integer -->
+<input type="range" id="a" >
+* <input type="text" id="b" value="20€">
+=<output name="x" for="a b"></output>
+</form>
 
 
 <div id="next">
@@ -160,7 +205,7 @@
 <div id="tna"><h2 style="text-align: center;">Brezovica</h2></div>
 <p style ="text-align: center; font-family: roboto;">Best place to enjoy during winter time.</p>
 <figure>
-    <img src="Brezovica.jpg" width="400" height="250">
+    <img src="Photos/Brezovica.jpg" width="400" height="250" class="rotatedx">
     <figcaption>1.Brezovica, Republic of Kosovo</figcaption>
 </figure>
 </article>
@@ -169,7 +214,7 @@
 <div id="tna"><h2>Prevalla</h2></div>
 <p style="text-align: center;">Best place to enjoy during summer and spring time.</p>
 <figure>
-    <img src="Prevalla.jpg" width="400" height="250">
+    <img src="Photos/Prevalla.jpg" width="400" height="250" class="rotatedy">
     <figcaption>1.Prevalla, Republic of Kosovo</figcaption>
 </figure>
 </article>
@@ -178,7 +223,7 @@
 <div id="tna"><h2>Rugova</h2></div>
 <p style="text-align: center;">Best place for people who like hiking.</p>
 <figure>
-    <img src="Rugova.png" width="400" height="250">
+    <img src="Photos/Rugova.png" width="400" height="250" class="rotatedz">
     <figcaption>1.Boge, Rugove</figcaption>
 </figure>
 </article>
@@ -212,7 +257,26 @@
     </tbody>
 </table>
 </div>
+<form>
+  <label for="browser">Choose the city you would like to visit:</label>
+  <input list="Cities" name="city" id="city">
+  <datalist id="Cities">
+    <option value="Prishtina">
+    <option value="Ferizaj">
+    <option value="Gjilan">
+    <option value="Peja">
+    <option value="Prizren">
+    <option value="Gjakova">    
+  </datalist>
+  <keygen name="security"> <!-- perdoret per te referencuar te dhenat pasi qe ato behen submit -->
+  <input type="submit">
+</form>
+<br>
 
+<div id="multipleb">
+    <h1 style="text-align: center;">Masakra e Prekazit</h1>
+    <p style="font-size: 18px;">Masakra e Prekazit ose Sulmi mbi Prekaz ishte një operacion i udhëhequr nga Njësia Speciale e Serbisë (SAJ) më 5 Mars 1998 për ti kapur ushtarët e Ushtrisë Çlirimtare të Kosovës (UÇK-së) të cilët janë konsideruar si "terroristë" nga Serbia. Gjatë operacionit, udhëheqësi i UÇK-së Adem Jashari dhe vëllai i tij Hamëz Jashari u vranë sëbashku me 58 anëtarët e familjes.</p>
+</div>
 
 <footer>
 <center><h4>Copyright &copy; 2021 Explore Kosovo<br></h4></center>

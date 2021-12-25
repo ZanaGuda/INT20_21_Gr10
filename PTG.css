@@ -222,3 +222,32 @@ main{
 #skewed{
   transform: skew(3deg)
 }
+
+.rotated{
+  transform: rotate(180deg); 
+}
+#skewed{
+  transform: skew(3deg)
+}
+.rotatedx{
+  transform: rotateX(360deg);
+}
+.rotatedy{
+  transform: rotateY(360deg);
+}
+.rotatedz{
+  transform: rotateZ(360deg);
+}
+.rotatedz{
+  position: relative;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove{
+  from{top:0px;}
+  to{top:30px;}
+}
+#multipleb {
+  background: url(Photos/mp.jpg) left top no-repeat, url(Photos/mp1.jpg) right bottom no-repeat, url(Photos/background.jpg) left top no-repeat;
+  padding: 15px;
+  background-size: 120px, 130px, 1500px;
+}

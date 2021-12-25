@@ -108,6 +108,11 @@ background: #fff;
 font-size: 35px;
 color: #333;
 font-weight: 500;
+outline: 1px dashed red;
+outline-offset: 10px;
+background: #e3dac9;;
+border: 1px solid black;
+margin: 5px;    
 }
 .contactForm .inputBox{
 position: relative;

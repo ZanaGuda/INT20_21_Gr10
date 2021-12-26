@@ -178,6 +178,7 @@ function drop(ev) {
 
 <a href="Hotels.pdf" style="margin: 100px; color:#8a8a8a; text-shadow: 0.5px 0.5px; ">Best hotels to stay in Kosovo</a>
 <br>
+ <div style="float: right";>
 <h4 style="margin: 10px;">The price of staying in a hotel for a few days!</h4>
 
 <form oninput="x.value=parseInt(a.value)*parseInt(b.value)"> <!-- parseInt e kthen se pari argumentin ne string,e analizon ate pastaj e kthen ne integer -->
@@ -185,6 +186,16 @@ function drop(ev) {
 * <input type="text" id="b" value="20€">
 =<output name="x" for="a b"></output>
 </form>
+    </div>
+ <p style="margin: 10px;">Drag and drop the photo! </p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="Kosovo.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="150">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<br><br><br><br><br><br><br><br><br><br>
 
 
 <div id="next">
@@ -218,6 +229,15 @@ function drop(ev) {
 </figure>
 </article>
 </div>
+    
+ <p style="text-align: center; font-family: roboto; font-size: 30px; background-color: #d4b791;">Most visited place in Kosovo:</p>
+
+<p id="place"></p> 
+
+<script>
+    const places =[" Prishtina" ," Gjilan", " Mitrovica", "Peja"];
+    document.getElementById("place").innerHTML = places[0];
+</script>
 
 <div class="table" >
 <table class="styled-table"  id="skewed">
@@ -268,6 +288,7 @@ function drop(ev) {
     <p style="font-size: 18px;">Masakra e Prekazit ose Sulmi mbi Prekaz ishte një operacion i udhëhequr nga Njësia Speciale e Serbisë (SAJ) më 5 Mars 1998 për ti kapur ushtarët e Ushtrisë Çlirimtare të Kosovës (UÇK-së) të cilët janë konsideruar si "terroristë" nga Serbia. Gjatë operacionit, udhëheqësi i UÇK-së Adem Jashari dhe vëllai i tij Hamëz Jashari u vranë sëbashku me 58 anëtarët e familjes.</p>
 </div>
 
+    <audio controls><source src="Mora_fjale.mp3" ></audio>
 <footer>
 <center><h4>Copyright &copy; 2021 Explore Kosovo<br></h4></center>
 </footer>

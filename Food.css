@@ -131,3 +131,20 @@ body{
 #dink{
 	background: -webkit-linear-gradient(top,#e3dac9, #989898,#e3dac9 );
 }
+.bc{
+  width: 300px;
+  height: 120px;
+  border:1px solid black;
+  margin: 20px;
+  background-color: white
+}
+#numb{
+  margin-left:10px;
+  margin-top: 10px;
+
+}
+#Club{
+  margin-left:10px;
+  margin-top: 15px;
+
+}

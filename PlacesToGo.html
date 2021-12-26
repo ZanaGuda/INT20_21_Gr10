@@ -182,7 +182,7 @@ function drop(ev) {
 <h4 style="margin: 10px;">The price of staying in a hotel for a few days!</h4>
 
 <form oninput="x.value=parseInt(a.value)*parseInt(b.value)"> <!-- parseInt e kthen se pari argumentin ne string,e analizon ate pastaj e kthen ne integer -->
-<input type="range" id="a" >
+<input type="range" id="a" min="0" max="50">
 * <input type="text" id="b" value="20€">
 =<output name="x" for="a b"></output>
 </form>

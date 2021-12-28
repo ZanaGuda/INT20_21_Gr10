@@ -235,8 +235,12 @@ function drop(ev) {
 <p id="place"></p> 
 
 <script>
-    const places =[" Prishtina" ," Gjilan", " Mitrovica", "Peja"];
-    document.getElementById("place").innerHTML = places[0];
+const places = ["Prishtina ", " Gjakova ", " Prizreni ", " Peja "];
+let i, len, text;
+for (i = 0, len = places.length, text = ""; i < len; i++) {
+  text += places[i] + ",";
+}
+document.getElementById("place").innerHTML = text;
 </script>
 
 <div class="table" >

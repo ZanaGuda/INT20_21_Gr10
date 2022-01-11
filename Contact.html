@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	  
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="Contact.css">
 
 	<title>Explore Kosovo</title>
-	
 	<style >
 		@font-face {
               font-family: MyHelvetica;
@@ -16,10 +16,7 @@
 }
 h1{
 	font-family: MyHelvetica,serif;
-}
-
-	</style>
-
+}</style>
 <script>
 function validateForm() {
   let x = document.forms["myForm"]["fullname"].value;
@@ -36,7 +33,7 @@ function validateForm() {
 	<div class="main">
 		<nav>
 		<div class="logo">
-			<img src="Photos/logo3.png" width="240" height="140">
+			<img src="logo.png" width="240" height="140">
 		</div>
 
 			<div class="nav-links">
@@ -54,20 +51,22 @@ function validateForm() {
 </div>
 <section class="contact">
 <div class="content">
+<header>
 <h1>Contact With Us</h1>
 <p>We would love to respond to your message.<br>Feel free to get in touch with us.</p>
+</header>
 </div>
 
 <div class="contactForm">
-<form name="myForm" onsubmit="return validateForm()" method="post" >
+<form>
 <h2>Send Message</h2>
-<br>	
+<br>
 <div class="inputBox">
-<input type="text" name="fullname" requrired>
+<input type="text" name="" requrired>
 <span>Full Name</span>
 </div>
 <div class="inputBox">
-<input type="text" name="email" requrired maxlength="40">
+<input type="text" name="" requrired>
 <span>E-mail</span>
 </div>
 <div class="inputBox">
@@ -92,8 +91,6 @@ function validateForm() {
 </form>
 <h5>Or send an e-mail:</h5>
 <a href="mailto:explorekosovo@gmail.com">Send email</a>
-</div>
-</div>
 <p> If you have any problem submitting your information</p>        
       <form>  
          <input type = "button" value = "Click" onclick = "fun();" />  
@@ -101,21 +98,22 @@ function validateForm() {
 </div>
 </div>
 <canvas id="myCanvas" width="1250" height="30" style="border:1px #8a8a8a;">
-	<script>
+<script>
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
-// Create gradient
+// Krijimi gradientit
 var grd = ctx.createLinearGradient(0, 0, 200, 0);
 grd.addColorStop(0, "#e3dac9");
 grd.addColorStop(1, "#8a8a8a");
 
-// Fill with gradient
+// Mbushja
 ctx.fillStyle = grd;
 ctx.fillRect(10, 10, 150, 80);
 </script>
 
 </canvas>
+
 <p id="today"></p>
 
 <script>
@@ -146,12 +144,12 @@ document.getElementById("today").innerHTML = "Today is " + day;
 </script>
 
 
-
-
 </section>
+
 <footer>
 <center><h4>Copyright &copy; 2021 Explore Kosovo<br></h4></center>
 </footer>
 
 </body>
+<script type="text/javascript" src="index.js"></script>
 </html>

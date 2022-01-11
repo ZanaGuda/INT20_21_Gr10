@@ -17,7 +17,6 @@ body{
   width: 100%;
   position: sticky;
   margin: -22px auto;
-  z-index: 1;
   display: flex;
   text-align:right 80 px;
   /*bottom: 100px;*/
@@ -69,10 +68,8 @@ body{
   color: #e3dac9;
   font-size: 50px;
 
- }
 
  }
-
 .photo{
   margin: auto;
   overflow: auto;
@@ -87,18 +84,18 @@ body{
   margin: 5px;
   border:2px solid #989898;;
   float:left;
-  width: 380px;
+  width: 350px;
   background-color: #e3dac9;
 
 }
 .gallery img{
-  width: 380px;
-  height: 280px;
+  width: 350px;
+  height: 300px;
   align-items: center;
 
 }
 .description{
-  padding:10px;
+  padding:10px; 
   font-size:17px;
   font-family: verdana;
   text-align: center;
@@ -109,16 +106,13 @@ body{
   margin: 5px;
   border:2px solid #989898;;
   float:left;
-  width: 280px;
+  width: 270px;
   background-color: #e3dac9;
-  padding: 3px;
-  margin-left: 15px;
 }
 .Cities img{
-  width: 280px;
-  height:170px;
+  width: 270px;
+  height:160px;
   align-items: center;
-
 
 }
 
@@ -164,12 +158,11 @@ main{
 
 .places{
   color: #6b6b6b;
- 
+  
 }
 .header{
   background-color: white;
 }
-
 /*tabela*/
 .styled-table {
     border-collapse: collapse;
@@ -179,6 +172,7 @@ main{
     min-width: 600px;
     height: 200px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+     outline-style: dashed;
 }
 .styled-table thead tr {
     background-color: #e3dac9;
@@ -207,6 +201,7 @@ main{
 .table{
   margin-left: 380px;
 }
+
 #tna{
     height: 50px;
   width: 1262px;
@@ -247,7 +242,22 @@ main{
   to{top:30px;}
 }
 #multipleb {
-  background: url(Photos/mp.jpg) left top no-repeat, url(Photos/mp1.jpg) right bottom no-repeat, url(Photos/background.jpg) left top no-repeat;
+  background: url(mp.jpg) left top no-repeat, url(mp1.jpg) right bottom no-repeat, url(background.jpg) left top no-repeat;
   padding: 15px;
   background-size: 120px, 130px, 1500px;
 }
+
+
+#place{
+  text-align: center;
+  font-family: roboto;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+#visitors{
+  text-align: center;
+  font-family: verdana;
+  color:#d4b791;
+}
+

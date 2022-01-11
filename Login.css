@@ -17,7 +17,6 @@ body{
   width: 100%;
   position: sticky;
   margin: -22px auto;
-  z-index: 1;
   display: flex;
   text-align:right 80 px;
   /*bottom: 100px;*/

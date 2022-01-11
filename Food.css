@@ -17,7 +17,6 @@ body{
  	width: 100%;
  	position: sticky;
  	margin: -22px auto;
- 	z-index: 1;
  	display: flex;
  	text-align:right 80 px;
  	/*bottom: 100px;*/
@@ -74,7 +73,7 @@ body{
 	top: 300%;
 	max-width: 1304px;
 	margin: auto;
-	background: #e3dac9;
+	background-color: #e3dac9;
 	overflow: auto;
 
 }
@@ -112,6 +111,7 @@ body{
 	border:2px solid black;
 	float:left;
 	width: 400px;
+	background-repeat:no-repeat;
 
 }
 .gallery img{
@@ -128,16 +128,17 @@ body{
 	font-weight:bold;
 
 }
+
 #dink{
-	background: -webkit-linear-gradient(top,#e3dac9, #989898,#e3dac9 );
+	background: -webkit-linear-gradient(top,#e3dac9, #d1bea8,#e3dac9 );
 }
-.bc{
-  width: 300px;
-  height: 120px;
-  border:1px solid black;
-  margin: 20px;
-  background-color: white
+
+#demo {
+	font-family: verdana;
+	font-size: 25px;
+	color: #ffa700;
 }
+
 #numb{
   margin-left:10px;
   margin-top: 10px;

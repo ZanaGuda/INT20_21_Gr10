@@ -4,6 +4,16 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="Home.css">
 	<title>Explore Kosovo</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+	$('button').click(function(){
+		$('#audio1').hide(1000);
+
+	});
+
+});
+</script>
 </head>
 
 <body>	
@@ -181,10 +191,10 @@ document.getElementById("komuna").innerHTML = result;
 
 
 </div>
-
+<div id="audio1">
   <audio controls><source src="Himni_i_Kosoves.mp3" ></audio>
 
-
+	</div>
 <p> <a href="#start" style="margin: 100px; color: #a99a86;">Go to the beginning</a></p>
   <footer>
 <center><h4>Copyright &copy; 2021 Explore Kosovo<br></h4></center>

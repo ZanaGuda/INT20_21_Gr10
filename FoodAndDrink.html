@@ -7,6 +7,15 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script>
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+            $("h1").append(" Best Places to eat in Kosovo ");
+          });
+        
+        });
+        </script>	
+	
+<script>
 $(document).ready(function(){
   $("#un").mouseup(function(){
     alert("This place serves only adults");
@@ -85,6 +94,9 @@ $(document).ready(function(){
 </div>
 <div class="desp" style="background-color: #e3dac9;">
 <h1 style="text-align: center; font-family: roboto;color: #989898;">Best Places to eat in Kosovo</h1>
+	
+<button id="btn1" style=" margin-left: 530px;">Append text</button>
+	
 <h3 style="color:#3d4035;" >Pristina, Kosovo Restaurants</h3>
 <ol>
 	<li style="text-decoration:underline; color: #ffa700;">Soma Book Station</li>

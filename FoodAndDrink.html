@@ -5,6 +5,15 @@
 	<link rel="stylesheet" href="Food.css">
 	<title>Food</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("h1").click(function(){
+			$(this).toggleClass("highlight");
+		});
+	});
+	</script>
+
 
 <script>
         $(document).ready(function(){
@@ -30,6 +39,13 @@ $(document).ready(function(){
 	font-family: calibri;
 	color: #696969;
 	background-color: #e3dac9;}
+		
+	.highlight{
+	color:#3d4035;
+	padding: 10px;
+        cursor: pointer;        
+        font: bold 20px sans-serif;
+	}
 	</style>
 </head>
 <body>
@@ -93,7 +109,7 @@ $(document).ready(function(){
 	</div>
 </div>
 <div class="desp" style="background-color: #e3dac9;">
-<h1 style="text-align: center; font-family: roboto;color: #989898;">Best Places to eat in Kosovo</h1>
+<h1 style="text-align: center; font-family: roboto;color: #989898;" class="highlight">Best Places to eat in Kosovo</h1>
 	
 <button id="btn1" style=" margin-left: 530px;">Append text</button>
 	

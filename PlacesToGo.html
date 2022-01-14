@@ -328,10 +328,19 @@ document.getElementById("demo"),innerHTML=z;//vizitore femra kete vite
 
 <p style="text-align: center; font-family: verdana;">Visitors during 2019 and 2020</p>
 <p id="visitors"></p>
+    
+<script>
+  
+  $(document).ready(function(){
+    $("#btn").click(function(){
+      $("#p0").fadeToggle();
 
-</div>
+    });
 
-  <audio controls><source src="Mora_fjale.mp3" ></audio>
+  });
+</script>
+<button id="btn" >If not interesed press this button</button>
+  <audio id= "p0"  controls><source src="Mora_fjale.mp3" ></audio>
 <footer>
 <center><h4>Copyright &copy; 2021 Explore Kosovo<br></h4></center>
 </footer>

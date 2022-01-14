@@ -33,6 +33,26 @@ function drop(ev) {
 </script>
 
     <title>Explore Kosovo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#button1").click(function(){
+        alert( $("#test").text());
+      });
+      
+    });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      $("div").click(function(){
+        $("h3").toggle();
+      });
+    });
+    </script>
+
+    
+    
 </head>
 
 <body>  
@@ -57,6 +77,13 @@ function drop(ev) {
 </div>
 
 <h2 style="text-align: center; font-family: verdana; color: #8a8a8a; margin: -30px auto; text-transform: uppercase; ">Popular places to visit</h2><br>
+    
+  <div class="contentBox">
+    <div id="first" class="buttonBox">
+      <button>If it's bothering you, you can hide it!</button>
+      <div class="border"></div>
+      <div class="border"></div>
+    </div>  
 
 <h3 style= " text-align: center; font-family: verdana; color: #8a8a8a; background-color:#e3dac9;"><i>Kosovo is not a country that you automatically think of when trying to come up with another Balkan bucket list location. The thing is, though, if you avoid this beautiful country, you’re missing out!</i></h3>
 <div class="photo">
